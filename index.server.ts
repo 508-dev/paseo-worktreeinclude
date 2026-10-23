@@ -6,7 +6,7 @@ export default function contribute(server: PluginServerContext) {
     const result = await copyWorktreeIncludes(workspace.cwd);
     if (result.kind === "copied") {
       console.log(
-        `[paseo-worktreeinclude] ${workspace.cwd}: copied ${result.copied.length}, skipped ${result.skipped.length} existing`,
+        `[paseo-worktreeinclude] ${workspace.cwd}: copied ${result.copied.length}, linked ${result.linked.length}, skipped ${result.skipped.length}`,
       );
     }
   });
