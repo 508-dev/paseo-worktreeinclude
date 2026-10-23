@@ -1,6 +1,7 @@
 {
-  "name": "@cprecioso/paseo-worktreeinclude",
+  "name": "@508-dev/paseo-worktreeinclude",
   "version": "0.1.1",
+  "private": true,
   "files": [
     "paseo-plugin.json",
     "OVERVIEW.md",
@@ -17,21 +18,18 @@
     "typescript": "^5.9.3",
     "zod": "^4.4.3"
   },
-  "description": "Paseo plugin that copies gitignored files listed in .worktreeinclude into new git worktrees, like Claude Code does.",
+  "description": "Paseo plugin that copies or symlinks gitignored files into new worktrees.",
   "author": "Carlos Precioso",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cprecioso/paseo-worktreeinclude.git"
+    "url": "git+https://github.com/508-dev/paseo-worktreeinclude.git"
   },
-  "homepage": "https://github.com/cprecioso/paseo-worktreeinclude",
+  "homepage": "https://github.com/508-dev/paseo-worktreeinclude",
   "keywords": [
     "paseo",
     "paseo-plugin",
     "worktree",
     "worktreeinclude"
-  ],
-  "publishConfig": {
-    "access": "public"
-  }
+  ]
 }

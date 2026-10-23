@@ -1,4 +1,4 @@
-# paseo-worktreeinclude
+# paseo-worktreeinclude (508-dev fork)
 
 A [Paseo](https://paseo.sh) plugin that copies gitignored files listed in `.worktreeinclude` into new git worktrees. Add `symlink <path>` to share a live file or directory instead.
 
@@ -20,14 +20,10 @@ symlink node_modules
 Requires Paseo 0.10.3 or later.
 
 ```bash
-paseo plugin install npm:@cprecioso/paseo-worktreeinclude
+paseo plugin add git:508-dev/paseo-worktreeinclude
 ```
 
-Or from GitHub:
-
-```bash
-paseo plugin install github:cprecioso/paseo-worktreeinclude
-```
+This fork uses the original plugin ID. Remove an existing `paseo-worktreeinclude` installation before switching sources. Based on [Carlos Precioso's plugin](https://github.com/cprecioso/paseo-worktreeinclude); the symlink addition is proposed upstream in [PR #2](https://github.com/cprecioso/paseo-worktreeinclude/pull/2).
 
 ## Caveat
 
