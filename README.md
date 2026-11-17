@@ -1,5 +1,7 @@
 # paseo-worktreeinclude (508-dev fork)
 
+Development continues in [508-dev/paseo-plugins](https://github.com/508-dev/paseo-plugins/tree/main/plugins/worktreeinclude). This repository remains installable for existing sources. Read the [migration guide](https://github.com/508-dev/paseo-plugins/blob/main/docs/migration.md) before switching an existing installation.
+
 A [Paseo](https://paseo.sh) plugin that copies gitignored files listed in `.worktreeinclude` into new git worktrees. Add `symlink <path>` to share a live file or directory instead.
 
 When a workspace is created in a linked git worktree, the plugin reads `.worktreeinclude` from the main checkout. Plain lines and `copy <pattern>` use gitignore syntax and copy matching files that are also gitignored. `symlink <path>` takes a literal relative path to one gitignored file or directory; wildcards are not supported for links. Tracked files are never touched, and existing destinations are not overwritten. Links point to the live source, so edits in either checkout affect the same file. Copies use copy-on-write cloning (APFS, btrfs) when available.
