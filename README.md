@@ -19,10 +19,10 @@ symlink node_modules
 
 ## Install
 
-Requires Paseo 0.10.3 or later.
+Requires Paseo 0.8.0 or later.
 
 ```bash
-paseo plugin add git:508-dev/paseo-worktreeinclude
+paseo plugin add https://github.com/508-dev/paseo-worktreeinclude.git
 ```
 
 This fork uses the original plugin ID. Remove an existing `paseo-worktreeinclude` installation before switching sources. Based on [Carlos Precioso's plugin](https://github.com/cprecioso/paseo-worktreeinclude); the symlink addition is proposed upstream in [PR #2](https://github.com/cprecioso/paseo-worktreeinclude/pull/2).
