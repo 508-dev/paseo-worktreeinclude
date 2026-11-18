@@ -1,6 +1,6 @@
 {
   "id": "paseo-worktreeinclude",
   "requirements": {
-    "paseo": ">=0.10.3"
+    "paseo": ">=0.8.0"
   }
 }
